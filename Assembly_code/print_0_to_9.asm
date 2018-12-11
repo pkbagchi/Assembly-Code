@@ -1,0 +1,14 @@
+.MODEL SMALL
+.STACK 100H
+.DATA
+.CODE
+
+MAIN PROC
+    MOV CX,10
+    MOV DL,48
+    
+    TOP:
+    MOV AH,2
+    INT 21H
+    INC DL
+    LOOP TOP
